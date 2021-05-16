@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "doxmlparser"
+version = "0.1.0"
+description = "Python API to access doxygen generated XML output"
+authors = ["Nick Anderegg <nick@anderegg.io>"]
+license = "GPL-2"
+repository = "https://github.com/NickAnderegg/doxmlparser"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+lxml = "^4.6.3"
+six = "^1.16.0"
+
+[tool.poetry.dev-dependencies]
+# Style/linting dependencies
+pydocstyle = "^5.1.1"
+mypy = "^0"
+black = "*"
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
